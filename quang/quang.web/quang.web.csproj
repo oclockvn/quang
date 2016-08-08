@@ -195,6 +195,8 @@
     <Content Include="Helpers\HtmlHelpers.cshtml" />
     <Content Include="Content\styles\modules\_prefixer.scss" />
     <Content Include="Content\styles\modules\_var.scss" />
+    <Content Include="Content\styles\partials\_s-post.scss" />
+    <Content Include="Content\styles\modules\_components.scss" />
     <None Include="Scripts\jquery-3.1.0.intellisense.js" />
     <Content Include="Scripts\app\app.js" />
     <Content Include="Scripts\jquery-3.1.0.js" />
@@ -216,6 +218,7 @@
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\velocity.min.js" />
     <Content Include="Scripts\_references.js" />
+    <Content Include="Uploads\lorem-ipsum-dolor-sit-amet.PNG" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -254,6 +257,7 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Shared\_Header.cshtml" />
     <Content Include="Views\Shared\_Footer.cshtml" />
+    <Content Include="Views\Shared\_Post.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -13,8 +13,12 @@
 </head>
 <body>
     
-    <header id="header" class="header z-depth1">
-        @Html.Partial("_Header")
+    <header id="header" class="header z-depth0">
+        <div flex-container="row" flex-column="12">
+            <div flex-item="12">
+                @Html.Partial("_Header")
+            </div>
+        </div>
     </header>
 
     <main id="main" class="main">

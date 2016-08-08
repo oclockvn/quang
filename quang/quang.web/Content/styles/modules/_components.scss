@@ -1,0 +1,65 @@
+﻿a {
+    text-decoration: none;
+    color: $a-color !important;
+    //border: 1px solid red;
+    @include transition(.25s);
+    position: relative;
+    overflow: hidden;
+    text-shadow: 0 2px 2px rgba(0,0,0,.3);
+
+    &:before {
+        // content: '';
+        position: absolute;
+        display: block;
+        top: 100%;
+        left: 0;
+        height: 2px;
+        width: 100%;
+        background: $a-color;
+        opacity: 0;
+        @include transition(.25s ease-in-out);
+        @include transform(translateX(-40%));
+    }
+
+    &:hover {
+        color: $a-color-hover !important;
+
+        &:before {
+            width: 100%;
+            opacity: 1;
+            @include transform(translateX(0));
+        }
+    }
+}
+
+.bgc-main {
+    background-color: $color !important;
+}
+
+.tc-main {
+    color: $color !important;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+
+    &.absolute--full {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+    }
+}
+
+.img-circle {
+    border-radius: 50%;
+}
+
+.text-capitalize {
+    text-transform: capitalize;
+}

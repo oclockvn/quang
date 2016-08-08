@@ -1,0 +1,104 @@
+﻿.s-post-container {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.s-post {
+    margin-top: 1rem;
+    margin-bottom: 3rem;    
+
+    .s-post__title {
+        a {
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 1rem;
+            display: block;
+            padding: 1em;
+        }
+    }
+
+    .s-post__social {
+        @include flexbox;
+        @include align(center);
+
+        .social-left {
+            @include flex(1);
+        }
+
+        .social-right {
+            .fab__actions {
+                z-index: 3;
+            }
+        }
+    }
+
+    .s-post__lasted-comment {
+        //height: 48px;
+        background: $sub-color;
+        @include flexbox;
+        @include align(center);
+        padding: 10px;
+        
+        img {
+            // border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        div {
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            font-size: .85em;
+        }
+    }
+
+    .s-post__preview {
+        position: relative;
+        overflow: hidden;
+
+        a {
+            position: static !important;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+            object-fit: cover;
+            -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+            filter: grayscale(100%);      
+        }
+
+        .description {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            bottom: 0;
+            padding: 20px;
+            background-color: rgba(0,0,0,.4);
+            color: #fff;
+            font-size: .9em;
+            @include transition(.4s ease-in-out);
+            @include transform(translateY(32px));
+            opacity: 0;            
+        }
+
+        &:hover {
+            .description {
+                @include transform(translateY(0));
+                opacity: 1;
+            }
+        }
+    }
+
+    &:hover {
+        .description {
+            
+        }
+
+        img {
+            -webkit-filter: grayscale(0); /* Chrome, Safari, Opera */
+            filter: grayscale(0);
+        }
+    }
+}
