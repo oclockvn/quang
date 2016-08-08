@@ -164,6 +164,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\HtmlExtentions.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -172,6 +173,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\fonts\materialdesignicons-webfont.svg" />
+    <Content Include="Content\images\beo.jpg" />
+    <Content Include="Content\images\kratos.png" />
     <Content Include="Content\lumx.css" />
     <Content Include="Content\styles\quang.css" />
     <Content Include="favicon.ico" />
@@ -189,6 +192,9 @@
     <Content Include="Content\fonts\materialdesignicons-webfont.ttf" />
     <Content Include="Content\fonts\materialdesignicons-webfont.woff" />
     <Content Include="Content\fonts\materialdesignicons-webfont.woff2" />
+    <Content Include="Helpers\HtmlHelpers.cshtml" />
+    <Content Include="Content\styles\modules\_prefixer.scss" />
+    <Content Include="Content\styles\modules\_var.scss" />
     <None Include="Scripts\jquery-3.1.0.intellisense.js" />
     <Content Include="Scripts\app\app.js" />
     <Content Include="Scripts\jquery-3.1.0.js" />
@@ -217,7 +223,9 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <Content Include="Views\Web.config" />
+    <Content Include="Views\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
@@ -245,6 +253,7 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Shared\_Header.cshtml" />
+    <Content Include="Views\Shared\_Footer.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

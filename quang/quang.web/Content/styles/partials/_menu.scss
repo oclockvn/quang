@@ -1,2 +1,64 @@
-﻿body {
+﻿$height: 48px;
+$height2: $height*2;
+$image_width: 64px;
+
+.nav {    
+    @include flexbox;
+    height: $height2;
+
+    .nav__left {        
+        @include flexbox;
+        @include align(center);
+
+        img {
+            border-radius: 50%;
+            width: $image_width;
+            height: $image_width;
+            margin: 0 20px;
+        }
+
+        a {
+            display: block;
+            height: $height2;
+            line-height: $height2;
+            @include flexbox;
+            @include align(center);
+            text-transform: uppercase;
+            font-size: 1.1em;
+            text-shadow: 0 2px 2px rgba(0,0,0,.3);
+        }
+    }
+
+    .nav__right {
+        @include flex(1);
+        @include flexbox;
+        @include justify-content(flex-end);
+        @include align(center);
+       
+        .menu, li {
+            list-style: none;
+            margin: 0;
+            padding: 0;            
+            @include clearfix;
+
+            li {
+                display: block;
+                float: left;
+            }
+
+            a {
+                display: block;
+                float: left;
+                height: $height2;
+                line-height: $height2;
+                font-size: 1rem;
+                font-weight: 600;
+                padding: 0 16px;
+            }
+        }
+
+        .btn-toggle-search {
+            margin: 0 16px;
+        }
+    }
 }

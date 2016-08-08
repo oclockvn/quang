@@ -13,7 +13,7 @@
 </head>
 <body>
     
-    <header id="header" class="header">
+    <header id="header" class="header z-depth1">
         @Html.Partial("_Header")
     </header>
 
@@ -21,7 +21,9 @@
         @RenderBody()
     </main>
 
-    <footer id="footer" class="footer"></footer>
+    <footer id="footer" class="footer">
+        @Html.Partial("_Footer")
+    </footer>
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
