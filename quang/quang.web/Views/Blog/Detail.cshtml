@@ -58,7 +58,30 @@
                         "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains."
                     </p>
                 </div>
-                <!-- /post title -->
+                
+                <div class="post__rating center-block p+ card">
+                    <div lx-tooltip="view" lx-tooltip-position="left">
+                        <lx-icon lx-id="eye" lx-size="s" lx-color="black" lx-type="circled"></lx-icon>
+                        <strong>2500</strong>
+                    </div>
+                    <div lx-tooltip="rate" lx-tooltip-position="left">
+                        <lx-icon lx-id="thumb-up" lx-size="s" lx-color="black" lx-type="circled"></lx-icon>
+                        <span>
+                            <i class="mdi mdi-star"></i>
+                            <i class="mdi mdi-star"></i>
+                            <i class="mdi mdi-star"></i>
+                            <i class="mdi mdi-star"></i>
+                            <i class="mdi mdi-star"></i>
+                        </span>
+                        <strong>(6.5)</strong>
+                    </div>
+                </div>
+
+                <div class="post_comments center-block p+ card mt">
+                    comments
+                </div>
+
+                <div class="h"></div>
             </div>
             <!-- /post -->
         </div>
@@ -82,3 +105,27 @@
     </div>
 </div>
 
+<div class="post-share">
+    <lx-fab lx-direction="up">
+        <lx-fab-trigger>
+            <lx-button lx-size="xl" lx-type="fab" lx-tooltip="Add" lx-tooltip-position="left" lx-color="black">
+                <i class="mdi mdi-share-variant"></i>
+                <i class="mdi mdi-plus"></i>
+            </lx-button>
+        </lx-fab-trigger>
+
+        <lx-fab-actions>
+            <lx-button lx-size="l" lx-color="black" lx-type="fab" lx-tooltip="Delete" lx-tooltip-position="left">
+                <i class="mdi mdi-delete"></i>
+            </lx-button>
+
+            <lx-button lx-size="l" lx-color="black" lx-type="fab" lx-tooltip="Archive" lx-tooltip-position="left">
+                <i class="mdi mdi-package"></i>
+            </lx-button>
+
+            <lx-button lx-size="l" lx-color="black" lx-type="fab" lx-tooltip="Edit" lx-tooltip-position="left">
+                <i class="mdi mdi-pencil"></i>
+            </lx-button>
+        </lx-fab-actions>
+    </lx-fab>
+</div>

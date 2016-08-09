@@ -1,8 +1,10 @@
-﻿/*
-$(document).ready(function () {    
-    var shine2 = new Shine(document.getElementById('text'));
-    console.log(shine2);
-    if (shine2 != null) {
+﻿
+$(document).ready(function () {
+
+    var shineTarget = document.getElementById('text');
+    console.log(shineTarget);
+    if (shineTarget != null) {
+        var shine2 = new Shine(shineTarget);
         window.addEventListener('mousemove', function (event) {
             shine2.light.position.x = event.clientX;
             shine2.light.position.y = event.clientY;
@@ -10,4 +12,3 @@ $(document).ready(function () {
         }, false);
     }
 });
-*/

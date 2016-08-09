@@ -135,6 +135,11 @@ a {
 .text-uppercase {
   text-transform: uppercase; }
 
+.center-block {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto; }
+
 @-webkit-keyframes heartbeat {
   0% {
     -moz-transform: rotate(45deg) scale(1);
@@ -615,6 +620,34 @@ a {
     line-height: 28px; }
   .post .post__content p, .post .post__content div {
     font-size: .9rem; }
+.post .post__rating {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center; }
+  .post .post__rating > div {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center; }
+    .post .post__rating > div:first-child {
+      -webkit-box-flex: 1;
+      -moz-box-flex: 1;
+      -webkit-flex: 1;
+      -ms-flex: 1;
+      flex: 1; }
+  .post .post__rating i {
+    margin-right: 5px; }
 
 .post-jump a {
   font-size: .85em;
@@ -631,10 +664,21 @@ a {
     padding-left: 15px;
     padding-top: 3px;
     padding-bottom: 3px;
-    border-left: 3px solid rgba(33, 33, 33, 0.5); }
+    border-left: 3px solid #212121;
+    -webkit-transition: 0.25s;
+    -moz-transition: 0.25s;
+    -o-transition: 0.25s;
+    -ms-transition: 0.25s;
+    transition: 0.25s; }
     .post-jump .jump li:hover {
       border-left: 3px solid #f42; }
       .post-jump .jump li:hover a {
         text-shadow: none; }
+
+.post-share {
+  position: fixed;
+  bottom: 190px;
+  right: 48px;
+  z-index: 2; }
 
 /*# sourceMappingURL=quang.css.map */
