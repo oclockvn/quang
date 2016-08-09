@@ -16,7 +16,7 @@
 <body>
     
     <header id="header" class="header z-depth0">
-        <div id="text">tien quang</div>
+        @RenderSection("largeTitle", required: false)
         <div flex-container="row" flex-column="12">
             <div flex-item="12">
                 @Html.Partial("_Header")
