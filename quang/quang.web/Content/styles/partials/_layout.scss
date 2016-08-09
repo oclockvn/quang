@@ -1,1 +1,11 @@
-﻿
+﻿.quick-nav {
+    position: fixed;
+    bottom: 64px;
+    right: 48px;
+    z-index: 2;
+
+    button {
+        display: block;
+        margin: 0 auto 10px auto;
+    }
+}

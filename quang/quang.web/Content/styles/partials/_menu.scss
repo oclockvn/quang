@@ -4,6 +4,16 @@ $image_width: 64px;
 
 .header {
     overflow: hidden;
+    background-color: $white-color;
+
+    #text {
+        font-size: 12em;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 500;
+        padding: 10em auto;
+        color: $white-color;
+    }
 }
 
 .nav {    

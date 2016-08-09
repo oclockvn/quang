@@ -6,6 +6,8 @@
     <title>@ViewBag.Title - Quang</title>
     @*@Styles.Render("~/Content/css")*@
     <link href="~/Content/lumx.css" rel="stylesheet" />
+    <link href="~/Content/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Content/animate.css" rel="stylesheet" />
     <link href="~/Content/styles/quang.css" rel="stylesheet" />
 
     @Scripts.Render("~/bundles/modernizr")
@@ -14,6 +16,7 @@
 <body>
     
     <header id="header" class="header z-depth0">
+        <div id="text">tien quang</div>
         <div flex-container="row" flex-column="12">
             <div flex-item="12">
                 @Html.Partial("_Header")
@@ -23,9 +26,17 @@
 
     <main id="main" class="main">
         @RenderBody()
+
+        <div class="quick-nav">
+            <lx-button lx-type="fab" lx-size="xl" lx-color="black" lx-ripple="grey-100"><i class="mdi mdi-chevron-up"></i></lx-button>
+            <lx-button lx-type="fab" lx-size="l" lx-color="black" lx-ripple="grey-100"><i class="mdi mdi-chevron-down"></i></lx-button>
+        </div>
     </main>
 
     <footer id="footer" class="footer">
+        @*<div class="sign-toggle-footer">
+            <div class="animated infinite bounce"><i class="fa fa-angle-double-up"></i></div>
+        </div>*@
         @Html.Partial("_Footer")
     </footer>
 
@@ -36,7 +47,10 @@
     <script src="~/Scripts/moment.min.js"></script>
     <script src="~/Scripts/angular.min.js"></script>
     <script src="~/Scripts/lumx.min.js"></script>
+
+    <script src="~/Scripts/shine.min.js"></script>
     <script src="~/Scripts/app/app.js"></script>
+    <script src="~/Scripts/app/utils.js"></script>
 
     @RenderSection("scripts", required: false)
 </body>

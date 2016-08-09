@@ -4,6 +4,24 @@
     margin-right: auto;
 }
 
+.s-post-paging {
+    position: fixed;
+    //left: 0;
+    //width: 100%;
+    bottom: 0;
+    font-size: .7rem;
+    color: #fff;
+    z-index: 2000;
+    text-align: center;
+    padding: 5px;
+
+    left: 40%;
+    right: 40%;
+    width: 100px;
+    margin: 0 auto;
+    background-color: $color;
+}
+
 .s-post {
     margin-top: 1rem;
     margin-bottom: 3rem;    

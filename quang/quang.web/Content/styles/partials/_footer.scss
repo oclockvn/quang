@@ -1,0 +1,64 @@
+﻿.footer-fixed {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(0,0,0,.4);
+    font-size: .7rem;
+    @include flexbox;
+    @include align(center);
+    text-transform: uppercase;
+    padding: 5px 10px;
+    color: $white-color;
+
+    .footer__left {
+        @include flexbox;
+        @include align(center);
+
+        span {
+            margin: 0 2px;
+            font-weight: 600;
+
+            &:nth-child(1) {
+                margin-right: 5px;
+            }
+
+            &:nth-child(3) {
+                margin-left: 5px;
+            }
+
+            &.heartbeat {
+                position: relative;
+                top: -2px;
+            }
+        }
+    }
+
+    .footer__right {
+        a {
+            margin-left: 10px;
+            color: $white-color;
+        }
+    }
+
+    .footer__center {
+        @include flex(1);
+        text-align: center;
+    }
+}
+
+.sign-toggle-footer {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    bottom: 26px;
+    z-index: 100;
+    text-align: right;
+    padding-right: 70px;
+
+    > div {
+        display: inline-block;
+        @include animation-duration(1.5s);
+    }
+}

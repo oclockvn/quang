@@ -172,12 +172,16 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\animate.css" />
+    <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\fonts\materialdesignicons-webfont.svg" />
     <Content Include="Content\images\beo.jpg" />
+    <Content Include="Content\images\heart.svg" />
     <Content Include="Content\images\kratos.png" />
     <Content Include="Content\lumx.css" />
     <Content Include="Content\styles\quang.css" />
     <Content Include="favicon.ico" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\angular.min.js" />
@@ -197,8 +201,16 @@
     <Content Include="Content\styles\modules\_var.scss" />
     <Content Include="Content\styles\partials\_s-post.scss" />
     <Content Include="Content\styles\modules\_components.scss" />
+    <Content Include="Content\styles\partials\_footer.scss" />
+    <Content Include="Content\styles\modules\_heartbeat.scss" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
     <None Include="Scripts\jquery-3.1.0.intellisense.js" />
     <Content Include="Scripts\app\app.js" />
+    <Content Include="Scripts\app\utils.js" />
     <Content Include="Scripts\jquery-3.1.0.js" />
     <Content Include="Scripts\jquery-3.1.0.min.js" />
     <Content Include="Scripts\jquery-3.1.0.slim.js" />
@@ -216,6 +228,7 @@
     <Content Include="Scripts\moment.min.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\shine.min.js" />
     <Content Include="Scripts\velocity.min.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Uploads\lorem-ipsum-dolor-sit-amet.PNG" />
