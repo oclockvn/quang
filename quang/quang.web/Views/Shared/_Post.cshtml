@@ -1,4 +1,10 @@
-﻿
+﻿@model int
+
+@{
+    var i = Model;
+}
+
+
 <div class="s-post card z-depth1">
     <h4 class="s-post__title">
         <a href="@Url.AbsoluteAction("Detail","Blog")" title="lorem ipsum dolor sit amet" target="_self">
@@ -6,10 +12,14 @@
         </a>
     </h4>
     <div class="s-post__preview relative">
-        <a href="@Url.AbsoluteAction("Detail","Blog")" title="" target="_self">
+        <a href="@Url.AbsoluteAction("Detail","Blog")" title="" target="_self" class="link">
             <div class="absolute absolute--full"></div>
-        </a>        
-        <img src="@Url.AbsoluteContent("~/Uploads/lorem-ipsum-dolor-sit-amet.PNG")" width="500" height="250" alt="" />
+        </a>
+
+        @if (i % 2 == 0)
+        {
+            <img src="@Url.AbsoluteContent("~/Uploads/lorem-ipsum-dolor-sit-amet.PNG")" width="500" height="250" alt="" class="visuallyhidden2" />
+        }
 
         <div class="description">
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
@@ -48,7 +58,7 @@
             </lx-fab>
         </div>
     </div>
-    
+
     <div class="s-post__lasted-comment">
         <img alt="" width="32" height="32" src="@Url.AbsoluteContent("~/Content/images/kratos.png")" class="img-round" />
         <div class="comment-author">

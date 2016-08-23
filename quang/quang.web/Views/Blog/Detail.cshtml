@@ -81,24 +81,6 @@
                     comments
                 </div>
 
-                <div class="post__relates">
-                    <h5>relates posts</h5>
-                    <div flex-container="row">
-                        <div flex-item>
-                            <div class="post-relate">
-                                <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</a>
-                                <a href=""><i class="mdi mdi-chevron-left"></i></a>
-                            </div>
-                        </div>
-                        <div flex-item>
-                            <div class="post-relate">
-                                <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
-                                <a href=""><i class="mdi mdi-chevron-left"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
                 <div class="h"></div>
             </div>
             <!-- /post -->
@@ -146,4 +128,16 @@
             </lx-button>
         </lx-fab-actions>
     </lx-fab>
+</div>
+
+<div class="post-relates">
+    <h5>relates posts</h5>
+    <div flex-container="row">
+        <div flex-item class="post-relate post__relates--left">
+            <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</a>
+        </div>
+        <div flex-item class="post-relate post__relates--right">
+            <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
+        </div>
+    </div>
 </div>

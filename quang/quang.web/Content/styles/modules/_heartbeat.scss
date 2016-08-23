@@ -159,7 +159,7 @@
 .heartbeat:not(:required):after, .heartbeat:not(:required):before {
   position: absolute;
   content: "";
-  background: #f42;
+  background: #c2185b;// #f42;
 }
 .heartbeat:not(:required):before {
   -moz-border-radius-topleft: 4px;

@@ -14,7 +14,6 @@
     z-index: 2000;
     text-align: center;
     padding: 5px;
-
     left: 40%;
     right: 40%;
     width: 100px;
@@ -24,7 +23,7 @@
 
 .s-post {
     margin-top: 1rem;
-    margin-bottom: 3rem;    
+    margin-bottom: 3rem;
 
     .s-post__title {
         a {
@@ -57,7 +56,7 @@
         @include flexbox;
         @include align(center);
         padding: 10px;
-        
+
         img {
             // border-radius: 50%;
             margin-right: 10px;
@@ -84,21 +83,12 @@
             display: block;
             object-fit: cover;
             -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
-            filter: grayscale(100%);      
+            filter: grayscale(100%);
         }
 
         .description {
-            position: absolute;
-            left: 0;
-            width: 100%;
-            bottom: 0;
-            padding: 20px;
-            background-color: rgba(0,0,0,.4);
-            color: #fff;
             font-size: .9em;
-            @include transition(.4s ease-in-out);
-            @include transform(translateY(32px));
-            opacity: 0;            
+            padding: 20px;
         }
 
         &:hover {
@@ -111,12 +101,33 @@
 
     &:hover {
         .description {
-            
         }
 
         img {
             -webkit-filter: grayscale(0); /* Chrome, Safari, Opera */
             filter: grayscale(0);
         }
+    }
+}
+
+.s-post__preview {
+    // hide description when has image
+    img + .description {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        bottom: 0;        
+        background-color: rgba(0,0,0,.4);
+        color: #fff;
+        @include transition(.4s ease-in-out);
+        @include transform(translateY(32px));
+        opacity: 0;
+    }
+
+    // style description when no image
+    .link + .description {
+        background-color: $light;
+        border-top: 1px dashed;
+        border-bottom: 1px dashed;
     }
 }
