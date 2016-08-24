@@ -116,14 +116,13 @@
         position: absolute;
         left: 0;
         width: 100%;
-        bottom: 0;        
+        bottom: 0;
         background-color: rgba(0,0,0,.4);
         color: #fff;
         @include transition(.4s ease-in-out);
         @include transform(translateY(32px));
         opacity: 0;
     }
-
     // style description when no image
     .link + .description {
         background-color: $light;

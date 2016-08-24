@@ -10,9 +10,15 @@
                 <div class="post__title">
                     <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</h1>                    
                     <div class="sub-info clearfix">
-                        <div class="sub-left float-left">
-                            <i class="mdi mdi-clock"></i>
-                            <span>update at @DateTime.Now.ToString("MM/dd/yyyy hh:mm tt")</span>
+                        <div class="sub-left float-left" flex-container>
+                            <div class="mr chip chip--multi">                                
+                                <lx-icon lx-id="clock" lx-size="s" class="bgc-main tc-white" lx-type="circled"></lx-icon>
+                                <span>@DateTime.Now.ToString("MM/dd/yyyy hh:mm tt")</span>
+                            </div>
+                            <div class="chip chip--multi">                               
+                                <lx-icon lx-id="account-check" lx-size="s" class="bgc-main tc-white" lx-type="circled"></lx-icon>
+                                <span>2509</span>
+                            </div>
                         </div>
                         <div class="sub-right float-right">
                             <ul class="tags">
@@ -60,10 +66,10 @@
                 </div>
                 
                 <div class="post__rating center-block p+ card">
-                    <div lx-tooltip="view" lx-tooltip-position="left">
+                    @*<div lx-tooltip="view" lx-tooltip-position="left">
                         <lx-icon lx-id="eye" lx-size="s" lx-color="black" lx-type="circled"></lx-icon>
                         <strong>2500</strong>
-                    </div>
+                    </div>*@
                     <div lx-tooltip="rate" lx-tooltip-position="left">
                         <lx-icon lx-id="thumb-up" lx-size="s" lx-color="black" lx-type="circled"></lx-icon>
                         <span>
@@ -130,7 +136,7 @@
     </lx-fab>
 </div>
 
-<div class="post-relates">
+@*<div class="post-relates">
     <h5>relates posts</h5>
     <div flex-container="row">
         <div flex-item class="post-relate post__relates--left">
@@ -140,4 +146,4 @@
             <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
         </div>
     </div>
-</div>
+</div>*@

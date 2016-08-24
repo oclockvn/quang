@@ -1,0 +1,23 @@
+﻿.tabs {
+    span {
+        // color: #fff !important;
+    }
+}
+
+
+
+.tabs__link {
+    background-color: #fff;
+
+    span {
+        color: $dark;
+    }
+
+    &.tabs__link--is-active {
+        background-color: $color;
+
+        span {
+            color: #fff;
+        }
+    }
+}

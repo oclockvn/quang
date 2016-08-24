@@ -4,6 +4,14 @@
 
 <div class="s-post-container">
 
+    <lx-tabs lx-theme="dark" lx-color="color" lx-indicator="light-blue" class="mv++ bgc-main tc-white">
+        <lx-tab lx-label="newest"></lx-tab>
+
+        <lx-tab lx-label="most read"></lx-tab>
+
+        <lx-tab lx-label="highest rate"></lx-tab>
+    </lx-tabs>
+
     @for (int i = 0; i < 10; i++)
     {
         @Html.Partial("_Post", i)

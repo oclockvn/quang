@@ -176,3 +176,36 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+.chip {
+    $h: 30px;
+
+    i {
+        position: relative;
+        left: $h;
+    }
+
+    span {
+        display: inline-block;
+        height: 30px;
+        line-height: 30px;
+        background-color: rgba($color, .5);
+        padding-left: 40px;
+        padding-right: 10px;
+        border-radius: $h/2;
+        color: $light;
+    }
+
+    &.chip--multi {
+        //position: relative;
+        //left: -30px;
+        i {
+            left: 0;
+        }
+
+        span {
+            //position: relative;
+            margin-left: -30px;
+        }
+    }
+}
