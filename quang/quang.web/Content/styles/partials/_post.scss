@@ -56,11 +56,9 @@
     }
 
     .post__comments {
-
     }
 
     .post__relates {
-
     }
 }
 
@@ -81,7 +79,6 @@
         width: 250px;
         //border: 1px solid #f42;
         // border-left: 3px solid $color;
-        
         li {
             display: block;
             padding-left: 15px;
@@ -89,17 +86,17 @@
             padding-bottom: 3px;
             border-left: 3px solid rgba($color, .3);
             @include transition(.25s);
-            
+
             &:hover {
-                border-left: 3px solid $a-color-hover; 
+                border-left: 3px solid $a-color-hover;
                 background-color: rgba($a-color-hover, .15);
 
                 a {
                     text-shadow: none;
                     color: $color !important;
                 }
-            }            
-        }        
+            }
+        }
     }
 }
 
@@ -112,10 +109,36 @@
 
 .post__relates {
     .post__relates--left {
-
     }
 
     .post__relates--right {
+    }
+}
 
+.post-relates {
+    position: fixed;
+    bottom: 64px;
+    left: 0;
+    width: 500px;
+    background-color: #fff;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.3);
+    padding: 20px;
+    transition: .25s ease-in-out;
+    transform: translateX(-100%);
+    border-right: 4px solid $color;
+
+    h5 {
+        position: relative;
+        margin-bottom: 10px;
+
+        &:after {
+            position: absolute;
+            bottom: -5px;
+            height: 2px;
+            width: 50px;
+            background-color: $color;
+            display: block;
+            content: '';
+        }
     }
 }
