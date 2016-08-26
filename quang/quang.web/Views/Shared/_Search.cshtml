@@ -1,0 +1,26 @@
+﻿<div class="content-wrapper">
+    <div class="search__input mv+++">
+        <lx-text-field lx-label="keyword" lx-allow-clear="true">
+            <input type="text" ng-model="vm.textFields.floating.company">
+        </lx-text-field>
+    </div>
+
+    <div class="search__result">
+        <ul class="result-collection">
+            @for (int i = 0; i < 10; i++)
+            {
+                <li>
+                    <div class="result-item">
+                        <a href="#">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</a>
+                        <ul class="tags">
+                            <li><a href="#">tag1</a></li>
+                            <li><a href="#">tag2</a></li>
+                            <li><a href="#">tag3</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+            }
+        </ul>
+    </div>
+</div>

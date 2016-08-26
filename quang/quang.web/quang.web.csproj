@@ -211,6 +211,7 @@
     <Content Include="fonts\FontAwesome.otf" />
     <Content Include="Content\styles\partials\_post.scss" />
     <Content Include="Content\styles\partials\_tabs.scss" />
+    <Content Include="Content\styles\partials\_search.scss" />
     <None Include="Scripts\jquery-3.1.0.intellisense.js" />
     <Content Include="Scripts\app\app.js" />
     <Content Include="Scripts\app\utils.js" />
@@ -222,6 +223,7 @@
     <Content Include="Scripts\jquery-3.1.0.min.map" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery-scrollspy.min.js" />
+    <Content Include="Scripts\jquery.scrollTo.min.js" />
     <Content Include="Scripts\jquery.sticky.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
@@ -278,6 +280,7 @@
     <Content Include="Views\Shared\_Post.cshtml" />
     <Content Include="Views\Blog\Detail.cshtml" />
     <Content Include="Views\Shared\_LargeTitle.cshtml" />
+    <Content Include="Views\Shared\_Search.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

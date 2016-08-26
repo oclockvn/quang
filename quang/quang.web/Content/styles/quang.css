@@ -163,6 +163,11 @@ a {
 .chip.chip--multi span {
   margin-left: -30px; }
 
+.content-wrapper {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto; }
+
 @-webkit-keyframes heartbeat {
   0% {
     -moz-transform: rotate(45deg) scale(1);
@@ -323,6 +328,9 @@ a {
   left: 4px;
   width: 8px;
   height: 4px; }
+
+body.hide-scroll {
+  overflow: hidden; }
 
 .quick-nav {
   position: fixed;
@@ -757,5 +765,59 @@ a {
     background-color: #c2185b; }
     .tabs__link.tabs__link--is-active span {
       color: #fff; }
+
+.search-section {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9998;
+  background-color: #fff;
+  max-height: 100%;
+  overflow: hidden; }
+  .search-section.active {
+    display: block;
+    visibility: visible;
+    opacity: 1; }
+  .search-section .btn-close-search {
+    position: absolute !important;
+    top: 32px;
+    right: 32px; }
+  .search-section > div {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    max-height: 100%; }
+
+.search__input input {
+  height: auto;
+  padding: 5px 0;
+  font-size: 2em;
+  font-weight: 600; }
+
+.search__result {
+  margin-bottom: 32px;
+  overflow-x: hidden;
+  overflow-y: scroll; }
+
+.result-collection {
+  list-style: none; }
+  .result-collection .result-item {
+    padding: 10px 0; }
+    .result-collection .result-item > a {
+      font-weight: 600;
+      line-height: 1.2em;
+      display: block;
+      margin-bottom: 5px; }
+
+.result-collection > li + li {
+  border-top: 1px dashed #c2185b; }
 
 /*# sourceMappingURL=quang.css.map */

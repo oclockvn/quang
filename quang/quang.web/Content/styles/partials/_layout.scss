@@ -1,4 +1,10 @@
-﻿.quick-nav {
+﻿body {
+    &.hide-scroll {
+        overflow: hidden;
+    }
+}
+
+.quick-nav {
     position: fixed;
     bottom: 64px;
     right: 48px;

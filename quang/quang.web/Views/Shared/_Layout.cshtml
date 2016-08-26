@@ -28,15 +28,18 @@
         @RenderBody()
 
         <div class="quick-nav">
-            <lx-button lx-type="fab" lx-size="xl" lx-color="black" lx-ripple="grey-100"><i class="mdi mdi-chevron-up"></i></lx-button>
-            <lx-button lx-type="fab" lx-size="l" lx-color="black" lx-ripple="grey-100"><i class="mdi mdi-chevron-down"></i></lx-button>
+            <lx-button lx-type="fab" lx-size="xl" lx-color="black" lx-ripple="grey-100" class="btn-scroll" data-scroll-target="0"><i class="mdi mdi-chevron-up"></i></lx-button>
+            <lx-button lx-type="fab" lx-size="l" lx-color="black" lx-ripple="grey-100" class="btn-scroll" data-scroll-target="#footer"><i class="mdi mdi-chevron-down"></i></lx-button>
         </div>
     </main>
 
-    <footer id="footer" class="footer">
-        @*<div class="sign-toggle-footer">
-            <div class="animated infinite bounce"><i class="fa fa-angle-double-up"></i></div>
-        </div>*@
+    <section id="search-section" class="search-section">
+        <lx-button lx-type="fab" lx-color="black" lx-ripple="grey-100" class="btn-toggle-search btn-close-search"><i class="mdi mdi-close"></i></lx-button>
+
+        @Html.Partial("_Search")
+    </section>
+
+    <footer id="footer" class="footer">        
         @Html.Partial("_Footer")
     </footer>
 
@@ -50,6 +53,7 @@
 
     <script src="~/Scripts/jquery.sticky.js"></script>
     <script src="~/Scripts/jquery-scrollspy.min.js"></script>
+    <script src="~/Scripts/jquery.scrollTo.min.js"></script>
 
     <script src="~/Scripts/shine.min.js"></script>
     <script src="~/Scripts/app/app.js"></script>
