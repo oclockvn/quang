@@ -439,6 +439,19 @@ a {
     .nav.sm .nav__left h2 a {
       font-size: .75em; }
 
+.sticky-wrapper {
+  margin: 20px 0; }
+  .sticky-wrapper .filter-tabs {
+    z-index: 2000 !important; }
+  .sticky-wrapper.is-sticky .filter-tabs {
+    background-color: #fff;
+    border-bottom: 2px solid #c2185b; }
+    .sticky-wrapper.is-sticky .filter-tabs a {
+      height: 32px;
+      line-height: 32px;
+      font-size: .8em;
+      font-size: .8em !important; }
+
 .s-post-container {
   max-width: 500px;
   margin-left: auto;
