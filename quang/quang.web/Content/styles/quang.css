@@ -335,7 +335,7 @@ body.hide-scroll {
 .quick-nav {
   position: fixed;
   bottom: 64px;
-  right: 48px;
+  right: 32px;
   z-index: 2; }
   .quick-nav button {
     display: block;
@@ -731,7 +731,7 @@ body.hide-scroll {
 .post-share {
   position: fixed;
   bottom: 190px;
-  right: 48px;
+  right: 32px;
   z-index: 2; }
 
 .post-relates {
