@@ -10,7 +10,12 @@ namespace quang.web.Controllers
     public class HomeController : Controller
     {
         public ActionResult Index()
-        {            
+        {
+            using (var web = new System.Net.WebClient())
+            {
+                var html = web.DownloadString("http://phantienquang.blogspot.com");
+            }
+
             return View();
         }
 

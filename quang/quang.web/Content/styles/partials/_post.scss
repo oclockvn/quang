@@ -1,4 +1,19 @@
-﻿.post {
+﻿.post-detail-wrapper {
+    margin-bottom: 200px;
+}
+
+.sticky-wrapper.is-sticky {
+    .tc-main {
+        left: 0;
+        background-color: #fff;
+        font-size: .8rem;
+        font-weight: 400;
+        padding: .5rem 1rem;
+        width: 100% !important;
+    }
+}
+
+.post {
     .post__title {
         h1 {
             padding: .5em 0;
@@ -63,6 +78,7 @@
 }
 
 .post-jump {
+    margin-top: 40px;
 
     a {
         font-size: .85em;

@@ -3,7 +3,7 @@
     ViewBag.Title = "Detail";
 }
 
-<div class="container">
+<div class="container post-detail-wrapper">
     <div flex-container="row" flex-column="12">
         <div flex-item="8">
             <div class="post h">
@@ -86,8 +86,6 @@
                 <div class="post__comments center-block p+ card mt">
                     comments
                 </div>
-
-                <div class="h"></div>
             </div>
             <!-- /post -->
         </div>
@@ -95,7 +93,7 @@
 
         <div flex-item="4">
             <div class="post-jump clearfix">
-                <ul class="jump card mt+ float-right">
+                <ul class="jump card mt2+ float-right">
                     <li><a href="#" class="text-uppercase"><strong>in this article</strong></a></li>
                     @for (int i = 0; i < 2; i++)
                     {                        
@@ -148,6 +146,7 @@
     $(document).ready(function () {
 
         $(".post-jump").sticky({ topSpacing: 0 });
+        $('.tc-main').sticky({ topSpacing: 0 });
     });
     </script>
 }
