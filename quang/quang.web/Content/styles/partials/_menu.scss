@@ -3,7 +3,7 @@ $height2: $height*2;
 $image_width: 64px;
 
 .header {
-    overflow: hidden;
+    //overflow: hidden;
     background-color: $white-color;
 
     #text {
@@ -17,13 +17,19 @@ $image_width: 64px;
 }
 
 .nav {
+    $color: #fff;
+
     @include flexbox;
     height: $height2;
+    background-color: $main;
+    z-index: 200 !important;
+    position: relative;
     @include transition(.4s ease-in-out);
 
     a {
         height: $height2;
         line-height: $height2;
+        color: $color;
         font-weight: 300;
         text-transform: uppercase;
     }
@@ -40,7 +46,7 @@ $image_width: 64px;
         }
 
         a {
-            display: block;            
+            display: block;
             @include flexbox;
             @include align(center);
             text-transform: uppercase;
@@ -68,7 +74,7 @@ $image_width: 64px;
 
             a {
                 display: block;
-                float: left;                
+                float: left;
                 font-size: .9rem;
                 font-weight: 400;
                 padding: 0 16px;
@@ -102,7 +108,33 @@ $image_width: 64px;
         }
 
         .nav__right {
-            
+        }
+    }
+}
+
+#nav-sticky-wrapper.is-sticky {
+    .nav {
+        height: $height;
+
+        a {
+            height: $height;
+            line-height: $height;
+        }
+
+        .nav__left {
+            img {
+                width: 40px;
+                height: 40px;
+                border: 1px solid #ddd;
+                padding: 2px;
+            }
+
+            h2 a {
+                font-size: .75em;
+            }
+        }
+
+        .nav__right {
         }
     }
 }

@@ -2,7 +2,7 @@
     ViewBag.Title = "Home Page";
 }
 
-<div id="filter-tabs" class="filter-tabs">
+@*<div id="filter-tabs" class="filter-tabs">
     <lx-tabs lx-theme="dark" lx-color="color" lx-indicator="light-blue" class="bgc-main tc-white s-post-container">
         <lx-tab lx-label="newest"></lx-tab>
 
@@ -10,7 +10,7 @@
 
         <lx-tab lx-label="highest rate"></lx-tab>
     </lx-tabs>
-</div>
+</div>*@
 
 <div class="s-post-container">
 
@@ -21,16 +21,16 @@
 
 </div>
 
-<div class="s-post-paging">1/16</div>
+@*<div class="s-post-paging">1/16</div>*@
 
-@section largeTitle {
+@*@section largeTitle {
     @Html.Partial("_LargeTitle")
-}
+}*@
 
 @section scripts {
     <script>
         $(document).ready(function () {
-            $('#filter-tabs').sticky({ topSpacing: 0 });
+            // $('#filter-tabs').sticky({ topSpacing: 0 });
         });
     </script>
 }

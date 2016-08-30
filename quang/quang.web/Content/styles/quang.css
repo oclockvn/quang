@@ -342,7 +342,6 @@ body.hide-scroll {
     margin: 0 auto 10px auto; }
 
 .header {
-  overflow: hidden;
   background-color: #FAFAFA; }
   .header #text {
     font-size: 12em;
@@ -359,6 +358,9 @@ body.hide-scroll {
   display: -webkit-flex;
   display: flex;
   height: 96px;
+  background-color: #c2185b;
+  z-index: 200 !important;
+  position: relative;
   -webkit-transition: 0.4s ease-in-out;
   -moz-transition: 0.4s ease-in-out;
   -o-transition: 0.4s ease-in-out;
@@ -367,6 +369,7 @@ body.hide-scroll {
   .nav a {
     height: 96px;
     line-height: 96px;
+    color: #fff;
     font-weight: 300;
     text-transform: uppercase; }
   .nav .nav__left {
@@ -447,18 +450,29 @@ body.hide-scroll {
     .nav.sm .nav__left h2 a {
       font-size: .75em; }
 
-.sticky-wrapper {
-  margin: 20px 0; }
-  .sticky-wrapper .filter-tabs {
-    z-index: 2000 !important; }
-  .sticky-wrapper.is-sticky .filter-tabs {
-    background-color: #fff;
-    border-bottom: 2px solid #c2185b; }
-    .sticky-wrapper.is-sticky .filter-tabs a {
-      height: 32px;
-      line-height: 32px;
-      font-size: .8em;
-      font-size: .8em !important; }
+#nav-sticky-wrapper.is-sticky .nav {
+  height: 48px; }
+  #nav-sticky-wrapper.is-sticky .nav a {
+    height: 48px;
+    line-height: 48px; }
+  #nav-sticky-wrapper.is-sticky .nav .nav__left img {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ddd;
+    padding: 2px; }
+  #nav-sticky-wrapper.is-sticky .nav .nav__left h2 a {
+    font-size: .75em; }
+
+.sticky-wrapper .filter-tabs {
+  z-index: 2000 !important; }
+.sticky-wrapper.is-sticky .filter-tabs {
+  background-color: #fff;
+  border-bottom: 2px solid #c2185b; }
+  .sticky-wrapper.is-sticky .filter-tabs a {
+    height: 32px;
+    line-height: 32px;
+    font-size: .8em;
+    font-size: .8em !important; }
 
 .s-post-container {
   max-width: 500px;
@@ -644,7 +658,7 @@ body.hide-scroll {
 .post-detail-wrapper {
   margin-bottom: 200px; }
 
-.sticky-wrapper.is-sticky .tc-main {
+.sticky-wrapper2.is-sticky .tc-main {
   left: 0;
   background-color: #fff;
   font-size: .8rem;

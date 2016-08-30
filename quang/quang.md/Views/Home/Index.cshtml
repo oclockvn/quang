@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="container">
+    <div flex-container="row" flex-column="12">
+        <div flex-item="7">
+            <section class="posts">
+                @for (int i = 0; i < 6; i++)
+                {
+                    @Html.Partial("_Post")
+                }
+            </section>
+        </div>
+
+        <div flex-item="5">
+            asd
+        </div>
+    </div>
+
+</div>

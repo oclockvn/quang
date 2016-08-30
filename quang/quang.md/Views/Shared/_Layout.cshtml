@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html ng-app="quang">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - TienQuang</title>
+
+    <link href="~/Content/lumx.css" rel="stylesheet" />
+    <link href="~/Content/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Content/animate.css" rel="stylesheet" />
+    <link href="~/Content/styles/quang.css" rel="stylesheet" />
+
+    @*@Styles.Render("~/Content/css")*@
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+    
+    <header id="heaer" class="header">
+        <div class="header__bg"></div>
+        <nav class="header__nav">
+            <div class="container">
+                <h2 class="nav--left">
+                    <a href="#">tien quang</a>
+                </h2>
+                <div class="nav--right">
+                    <ul class="menu clearfix">
+                        <li><a href="#">dev</a></li>
+                        <li><a href="#">life</a></li>
+                        <li><a href="#">portfolio</a></li>
+                    </ul>
+                    <lx-button lx-type="fab" lx-size="xl" class="btn-toggle-search bgc-main tc-white"><i class="mdi mdi-magnify"></i></lx-button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        @RenderBody()
+    </main>
+    
+    <footer id="footer" class="footer">
+        <section class="famous-quote">
+            <h5>lorem ipsum</h5>
+            <p>Google is the new corporate homepage.</p>
+        </section>
+
+        <section class="footer-social">
+            <p class="text-center socials">
+                <lx-button lx-size="l" lx-type="fab"><i class="mdi mdi-plus"></i></lx-button>
+                <lx-button lx-size="l" lx-type="fab"><i class="mdi mdi-plus"></i></lx-button>
+                <lx-button lx-size="l" lx-type="fab"><i class="mdi mdi-plus"></i></lx-button>
+                <lx-button lx-size="l" lx-type="fab"><i class="mdi mdi-plus"></i></lx-button>
+                <lx-button lx-size="l" lx-type="fab"><i class="mdi mdi-plus"></i></lx-button>
+            </p>
+            <ul class="sitemap">
+                <li><a href="#">home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">policy &amp; privacy</a></li>
+            </ul>
+        </section>
+
+        <section class="footer-legal">
+            <span>
+                <a href="/">PTQ</a>
+                &copy; 2016 Phan Tien Quang
+            </span>
+            <span>Made with <i class="ml- heartbeat"></i>.</span>
+        </section>
+    </footer>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+
+    <script src="~/Scripts/velocity.min.js"></script>
+    <script src="~/Scripts/moment.min.js"></script>
+    <script src="~/Scripts/angular.min.js"></script>
+    <script src="~/Scripts/lumx.min.js"></script>
+
+    <script src="~/Scripts/jquery.sticky.js"></script>
+    <script src="~/Scripts/jquery-scrollspy.min.js"></script>
+    <script src="~/Scripts/jquery.scrollTo.min.js"></script>
+
+    <script src="~/Scripts/app/app.js"></script>
+    <script src="~/Scripts/app/common.js"></script>
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>

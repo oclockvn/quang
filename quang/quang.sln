@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "quang.web", "quang.web\quang.web.csproj", "{49BE32FB-B9E4-4731-9E89-A1AAA82E6554}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "quang.db", "quang.db\quang.db.csproj", "{4366DCCC-F950-4286-B5E0-A0004E755919}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "quang.md", "quang.md\quang.md.csproj", "{FAF30CDA-3AA0-45CD-8A2C-6BB91607BCD8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{4366DCCC-F950-4286-B5E0-A0004E755919}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4366DCCC-F950-4286-B5E0-A0004E755919}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4366DCCC-F950-4286-B5E0-A0004E755919}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAF30CDA-3AA0-45CD-8A2C-6BB91607BCD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAF30CDA-3AA0-45CD-8A2C-6BB91607BCD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAF30CDA-3AA0-45CD-8A2C-6BB91607BCD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAF30CDA-3AA0-45CD-8A2C-6BB91607BCD8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
