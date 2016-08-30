@@ -20,6 +20,7 @@ $stt__interactive: 36px;
 .post__tag {
     border-bottom: 1px solid #ddd;
     text-align: center;
+    position: relative;
     @include flexbox;
     @include align(center);
 
@@ -48,6 +49,13 @@ $stt__interactive: 36px;
             //font-size: 1.5em;
         }
     }
+
+    .post__rate {
+        position: absolute !important;
+        right: 32px;
+        top: -18px;
+        background-color: $main !important;
+    }
 }
 
 .post__title {
@@ -75,23 +83,45 @@ $stt__interactive: 36px;
     @include flexbox;
     @include align(center);
     padding: 0 1.5em 1.5em;
+}
 
-    .stt__viewer {
+.stt__viewer {
+}
 
+.stt__interactive {
+    @include flex(1);
+
+    li {
+        display: inline-block;
+    }
+}
+
+.quick--interactive2 {
+    @include flexbox;
+    @include align(center);
+}
+
+.post__statistic, .quick--interactive2 {
+    span, i {
+        height: $stt__interactive;
+        line-height: $stt__interactive;
+    }
+}
+
+.post__paging {
+    > button {
+        &:first-child, &:last-child {
+            padding-left: 32px;
+            padding-right: 32px;
+            border-radius: 20px;
+        }
     }
 
-    .stt__interactive {
-        @include flex(1);
+    .pager {
+        display: inline-block;
 
         li {
             display: inline-block;
         }
-    }
-}
-
-.post__statistic {
-    span, i {
-        height: $stt__interactive;
-        line-height: $stt__interactive;
     }
 }

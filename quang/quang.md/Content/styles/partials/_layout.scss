@@ -5,3 +5,25 @@
 .main {
     padding-top: 320px;
 }
+
+.btn-scroll-top {
+    position: fixed !important;
+    bottom: 64px;
+    right: 32px;
+
+    i {
+        @include transition(.4s ease-in-out);
+    }
+
+    &.down {
+        i {
+            @include transform(rotate(180deg));
+        }
+    }
+}
+
+.right-content {
+    > div, > section {
+        float: right;
+    }
+}

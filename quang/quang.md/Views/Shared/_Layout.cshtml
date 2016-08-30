@@ -16,7 +16,7 @@
 </head>
 <body>
     
-    <header id="heaer" class="header">
+    <header id="heaer" class="header z-depth2">
         <div class="header__bg"></div>
         <nav class="header__nav">
             <div class="container">
@@ -33,10 +33,22 @@
                 </div>
             </div>
         </nav>
+
+        <div class="header__search z-depth4">
+            <div class="search-wrapper container text-center pv+++">
+                <lx-text-field lx-label="search" lx-fixed-label="true" lx-icon="magnify">
+                    <input type="text" ng-model="vm.textFields.fixed.emptyName">
+                </lx-text-field>
+            </div>
+        </div>
+
+        @*<div class="header__search__result bgc-white z-depth4 mt++ container"></div>*@
     </header>
 
     <main class="main">
         @RenderBody()
+
+        <lx-button lx-type="fab" lx-size="xl" class="btn-scroll-top bgc-main tc-white"><i class="mdi mdi-chevron-up"></i></lx-button>
     </main>
     
     <footer id="footer" class="footer">
@@ -47,15 +59,16 @@
 
         <section class="footer-social">
             <p class="text-center socials">
-                <lx-button lx-size="l" lx-type="fab"><i class="mdi mdi-plus"></i></lx-button>
-                <lx-button lx-size="l" lx-type="fab"><i class="mdi mdi-plus"></i></lx-button>
-                <lx-button lx-size="l" lx-type="fab"><i class="mdi mdi-plus"></i></lx-button>
-                <lx-button lx-size="l" lx-type="fab"><i class="mdi mdi-plus"></i></lx-button>
-                <lx-button lx-size="l" lx-type="fab"><i class="mdi mdi-plus"></i></lx-button>
+                <lx-button lx-size="l" lx-type="fab"><i class="mdi mdi-facebook"></i></lx-button>
+                <lx-button lx-size="l" lx-type="fab"><i class="mdi mdi-twitter"></i></lx-button>
+                <lx-button lx-size="l" lx-type="fab"><i class="mdi mdi-google-plus"></i></lx-button>
+                <lx-button lx-size="l" lx-type="fab"><i class="mdi mdi-github-box"></i></lx-button>
+                <lx-button lx-size="l" lx-type="fab"><i class="mdi mdi-linkedin"></i></lx-button>
             </p>
             <ul class="sitemap">
                 <li><a href="#">home</a></li>
                 <li><a href="#">about</a></li>
+                <li><a href="#">sitemap</a></li>
                 <li><a href="#">policy &amp; privacy</a></li>
             </ul>
         </section>
@@ -65,7 +78,7 @@
                 <a href="/">PTQ</a>
                 &copy; 2016 Phan Tien Quang
             </span>
-            <span>Made with <i class="ml- heartbeat"></i>.</span>
+            <span>Made with <i class="ml- heartbeat"></i></span>
         </section>
     </footer>
 

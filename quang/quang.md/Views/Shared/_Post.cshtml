@@ -11,8 +11,10 @@
         </ul>
 
         <div class="text-right timestamp">
-            <lx-icon lx-size="l" lx-id="clock" lx-color="blue" lx-type="flat"></lx-icon> <span class="ml-">08/30/2016</span>
+            <lx-icon lx-size="l" lx-id="clock" lx-color="blue" lx-type="flat"></lx-icon> <span>08/30/2016</span>
         </div>
+
+        @*<lx-button lx-type="fab" class="post__rate">9</lx-button>*@
     </div>
 
     <div class="post__info">
@@ -26,8 +28,29 @@
     </div>
 
     <div class="post__statistic">
-        <div class="stt__viewer">
-            <lx-icon lx-id="android" lx-size="m" lx-color="blue" lx-type="flat"></lx-icon> <span>2.500</span>
+        <div class="stt__viewer">            
+            <lx-fab lx-direction="up">
+                <lx-fab-trigger>
+                    <lx-button lx-size="xl" lx-type="fab" lx-tooltip="share" class="bgc-main" lx-tooltip-position="left">
+                        <i class="mdi mdi-share-variant"></i>
+                        <i class="mdi mdi-shape-rectangle-plus"></i>
+                    </lx-button>
+                </lx-fab-trigger>
+
+                <lx-fab-actions>
+                    <lx-button lx-size="l" lx-color="black" lx-type="fab" lx-tooltip="facebook" lx-tooltip-position="left">                        
+                        <i class="fa fa-facebook"></i>
+                    </lx-button>
+
+                    <lx-button lx-size="l" lx-color="black" lx-type="fab" lx-tooltip="twitter" lx-tooltip-position="left">
+                        <i class="fa fa-twitter"></i>
+                    </lx-button>
+
+                    <lx-button lx-size="l" lx-color="black" lx-type="fab" lx-tooltip="google plus" lx-tooltip-position="left">
+                        <i class="fa fa-google-plus"></i>
+                    </lx-button>
+                </lx-fab-actions>
+            </lx-fab>
         </div>
         <div class="stt__interactive">
             <ul class="list-unstyle m0 text-right">
@@ -38,7 +61,7 @@
                     <span>20</span> <lx-icon lx-id="account-circle" lx-size="m" lx-color="blue" lx-type="flat"></lx-icon>
                 </li>
                 <li>
-                    <span>20</span> <lx-icon lx-id="android" lx-size="m" lx-color="blue" lx-type="flat"></lx-icon>
+                    <span>9</span> <lx-icon lx-id="star" lx-size="m" lx-color="blue" lx-type="flat"></lx-icon>
                 </li>
             </ul>
         </div>
