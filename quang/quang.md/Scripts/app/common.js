@@ -15,6 +15,7 @@ function onToggleSearchClicked(e) {
 
     // $seachSection.toggleClass('active');
     //$('body').toggleClass('hide-scroll');
+    $btn.toggleClass('active');
     $seachSection.toggleClass('active');
 }
 
