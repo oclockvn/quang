@@ -86,8 +86,7 @@ function onScrollButtonClicked(e) {
             console.log('top callback');
             setTimeout(function () {
                 $btn.addClass('down');
-            }, 100);
-            
+            }, 100);            
         });
     }
 }
