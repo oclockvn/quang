@@ -7,11 +7,12 @@ $header__bg_height: 100%;
     width: 100%;
     min-height: $h;
     margin-bottom: 20px;
-    z-index: 10;
+    z-index: $header_index;
 
     &.fixed {
         position: fixed;
-        z-index: 1001;
+        z-index: $page-wrapper_index + 10;
+        //z-index: 9992; // > .page-wrapper
 
         .header__bg {
             background-image: url('/Content/images/bg/10.png');
@@ -21,7 +22,7 @@ $header__bg_height: 100%;
             position: fixed;
             top: 0;
             left: 0;
-            z-index: 1100;
+            //z-index: 2100;
             width: 100%;
             margin: 0;
             height: $h;
@@ -37,7 +38,7 @@ $header__bg_height: 100%;
     top: 0;
     left: 0;
     width: 100%;
-    @include transition(background-image .3s ease-in-out);
+    @include transition(.4s ease-in-out);
     height: $header__bg_height;
 
     background: {
@@ -80,6 +81,11 @@ $header__bg_height: 100%;
         //@include transition-delay(.4s);
         //@include transform(translateY(0) !important);
     }
+
+    &.header__nav--page {
+        margin-top: 0;
+        margin-bottom: $nav_margin_top;
+    }
 }
 
 .menu {
@@ -107,7 +113,7 @@ $header__bg_height: 100%;
     position: absolute !important;
     right: 32px;
     bottom: -28px;
-    z-index: 1103;
+    z-index: $header__search_index + 1;
 
     i {
         @include transition(.3s ease-in-out);
@@ -143,7 +149,7 @@ $header__bg_height: 100%;
     background: #fff;
     left: 0;
     width: 100%;
-    z-index: 9;
+    z-index: $header__search_index;
     top: 100%;
     opacity: 0;
     visibility: hidden;
@@ -152,7 +158,7 @@ $header__bg_height: 100%;
     @include transform-origin(top center);
 
     &.active {
-        z-index: 1002;
+        //z-index: 2002;
         opacity: 1;
         visibility: visible;
         //@include transform(translateY(100%));

@@ -21,7 +21,7 @@
         <nav class="header__nav">
             <div class="container">
                 <h2 class="nav--left">
-                    <a href="#">tien quang</a>
+                    <a href="@Url.Action("Index","Home")">tien quang</a>
                 </h2>
                 <div class="nav--right">
                     <ul class="menu clearfix">
@@ -35,21 +35,42 @@
                     </lx-button>
                 </div>
             </div>
+
+            <div class="header__search z-depth4">
+                <div class="search-wrapper container text-center pv+++">
+                    <lx-text-field lx-label="search" lx-fixed-label="true" lx-icon="magnify">
+                        <input type="text" ng-model="vm.textFields.fixed.emptyName">
+                    </lx-text-field>
+                </div>
+            </div>
         </nav>
 
-        <div class="header__search z-depth4">
+        @*<div class="header__search z-depth4">
             <div class="search-wrapper container text-center pv+++">
                 <lx-text-field lx-label="search" lx-fixed-label="true" lx-icon="magnify">
                     <input type="text" ng-model="vm.textFields.fixed.emptyName">
                 </lx-text-field>
             </div>
-        </div>
+        </div>*@
 
         @*<div class="header__search__result bgc-white z-depth4 mt++ container"></div>*@
     </header>
 
     <main class="main">
-        @RenderBody()
+        <div class="container">
+            <div flex-container="row" flex-column="12">
+                <div flex-item="7">
+                    @RenderBody()
+                </div>
+
+                <div flex-item="5" class="right-content">
+                    @Html.Partial("_Features")
+                </div>
+            </div>
+
+        </div>
+
+        
 
         <lx-button lx-type="fab" lx-size="xl" class="btn-scroll-top bgc-main tc-white"><i class="mdi mdi-chevron-up"></i></lx-button>
     </main>

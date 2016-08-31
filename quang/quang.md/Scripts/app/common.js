@@ -115,5 +115,5 @@ $(document).ready(function () {
 
     // fix nav
     //$('.nav--right').sticky({ topSpacing: 0 });
-    $('.category').sticky({ topSpacing: 60 });
+    // $('.category').sticky({ topSpacing: 60 });
 });

@@ -1,3 +1,10 @@
-﻿$dark: #212121;
+﻿$menu_height: 54px;
+
+$dark: #212121;
 $main: #f42;
 $light: #aaa;
+
+$header_index: 1000;
+$header__search_index: 1100;
+$page-wrapper_index: 2000;
+$page__nav_index: $header_index - 1;

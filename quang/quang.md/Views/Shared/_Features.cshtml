@@ -1,0 +1,75 @@
+﻿<section class="feature feature--has-divider most-read">
+    <h4 class="feature__title">most read</h4>
+    <ul class="feature__content read--most m0 list-unstyle">
+        @for (int i = 0; i < 3; i++)
+        {
+            <li>
+                <div class="read">
+                    <p>
+                        <a href="#" class="feature__permalink">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium</a>
+                    </p>
+                    <div class="feature__pub">@DateTime.Now.ToString("hh:mm tt MM/dd/yyyy")</div>
+                    <div class="stt__interactive quick--interactive feature__interactive">
+                        <ul class="list-unstyle m0 text-right">
+                            <li>
+                                <span>20</span> <lx-icon lx-id="comment-text" lx-size="s" lx-color="blue" lx-type="flat"></lx-icon>
+                            </li>
+                            <li>
+                                <span>20</span> <lx-icon lx-id="account-circle" lx-size="s" lx-color="blue" lx-type="flat"></lx-icon>
+                            </li>
+                            <li>
+                                <span>9</span> <lx-icon lx-id="star" lx-size="s" lx-color="blue" lx-type="flat"></lx-icon>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+        }
+    </ul>
+</section>
+
+<section class="feature feature--has-divider most-read">
+    <h4 class="feature__title">recent posts</h4>
+    <ul class="feature__content read--most m0 list-unstyle">
+        @for (int i = 0; i < 3; i++)
+        {
+            <li>
+                <div class="read">
+                    <p>
+                        <a href="#" class="feature__permalink">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</a>
+                    </p>
+                    <div class="feature__pub">@DateTime.Now.ToString("hh:mm tt MM/dd/yyyy")</div>
+                    <div class="stt__interactive quick--interactive feature__interactive">
+                        <ul class="list-unstyle m0 text-right">
+                            <li>
+                                <span>20</span> <lx-icon lx-id="comment-text" lx-size="s" lx-color="blue" lx-type="flat"></lx-icon>
+                            </li>
+                            <li>
+                                <span>20</span> <lx-icon lx-id="account-circle" lx-size="s" lx-color="blue" lx-type="flat"></lx-icon>
+                            </li>
+                            <li>
+                                <span>9</span> <lx-icon lx-id="star" lx-size="s" lx-color="blue" lx-type="flat"></lx-icon>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+        }
+    </ul>
+</section>
+
+<section class="feature feature--sm category">
+    <h4 class="feature__title">tags</h4>
+    <ul class="feature__content m0 list-unstyle">
+        @for (int i = 0; i < 10; i++)
+        {
+            <li>
+                <div class="clearfix cate">
+                    <a href="#" class="cate__tag">#lorem ipsum</a>
+                    <span class="cate__count">@((i + 1) * 10)</span>
+                </div>
+            </li>
+        }
+    </ul>
+</section>
+

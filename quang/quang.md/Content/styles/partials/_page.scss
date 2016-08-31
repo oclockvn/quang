@@ -1,0 +1,35 @@
+﻿.page-wrapper {
+    position: relative;
+    z-index: $page-wrapper_index;
+    margin-top: -150px;
+}
+
+.page__nav {
+    position: fixed;
+    top: $menu_height + 100px;
+    left: 0;
+    //height: 100%;
+    width: 200px;
+    z-index: $page__nav_index;
+    @include transition(.5s ease-in-out);
+    @include transform(translateX(-100%));
+
+    li + li {
+        border-top: 1px solid $light;
+    }
+
+    a {
+        color: $light;
+        display: block;
+
+        &:hover {
+            color: $dark;
+        }
+    }
+}
+
+.header.fixed + .main {
+    .page__nav {
+        @include transform(translateX(0));
+    }
+}
