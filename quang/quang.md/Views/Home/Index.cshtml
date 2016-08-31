@@ -9,3 +9,15 @@
     }
 </section>
 
+<div class="post__paging mt++ mb+++">
+    <lx-button lx-type="raised" lx-size="l"><i class="mdi mdi-chevron-double-left"></i></lx-button>
+
+    <ul class="pager list-unstyle m0">
+        @for (int i = 0; i < 6; i++)
+        {
+            <li><lx-button lx-type="fab" lx-size="l">@i</lx-button></li>
+        }
+    </ul>
+
+    <lx-button lx-type="raised" lx-size="l"><i class="mdi mdi-chevron-double-right"></i></lx-button>
+</div>

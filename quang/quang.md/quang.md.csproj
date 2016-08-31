@@ -211,10 +211,12 @@
   <ItemGroup>
     <Content Include="Content\animate.css" />
     <Content Include="Content\font-awesome.min.css" />
+    <Content Include="Content\fontawesome-stars.css" />
     <Content Include="Content\fonts\materialdesignicons-webfont.svg" />
     <Content Include="Content\images\bg\10.png" />
     <Content Include="Content\images\bg\16.png" />
     <Content Include="Content\images\bg\bg-one-piece.jpg" />
+    <Content Include="Content\images\post\user.png" />
     <Content Include="Content\lumx.css" />
     <Content Include="Content\styles\quang.css" />
     <Content Include="favicon.ico" />
@@ -257,8 +259,10 @@
     <Content Include="Scripts\jquery-2.1.0.js" />
     <Content Include="Scripts\jquery-2.1.0.min.js" />
     <Content Include="Scripts\jquery-2.1.0.min.map" />
+    <Content Include="Scripts\jquery.barrating.min.js.map" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery-scrollspy.min.js" />
+    <Content Include="Scripts\jquery.barrating.min.js" />
     <Content Include="Scripts\jquery.scrollTo.min.js" />
     <Content Include="Scripts\jquery.sticky.js" />
     <Content Include="Scripts\jquery.validate.js" />

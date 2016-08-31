@@ -87,3 +87,18 @@
 .list-unstyle {
     list-style: none;
 }
+
+.list-inline {
+    > li {
+        display: inline-block;
+    }
+}
+
+.statistic {
+    $statistic: 36px;
+
+    span, i {
+        height: $statistic;
+        line-height: $statistic;
+    }
+}
