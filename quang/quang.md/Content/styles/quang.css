@@ -21,8 +21,7 @@ a:link, a:visited, a:hover, a:active {
   margin-left: auto; }
 
 .clearfix:before,
-.clearfix:after
-.container:before,
+.clearfix:after .container:before,
 .container:after,
 .container-fluid:before,
 .container-fluid:after {
@@ -64,6 +63,15 @@ a:link, a:visited, a:hover, a:active {
 .statistic span, .statistic i {
   height: 36px;
   line-height: 36px; }
+.statistic i {
+  width: auto !important; }
+.statistic li {
+  margin-left: 10px; }
+
+.mobile {
+  max-width: 100%;
+  margin-left: 15px;
+  margin-right: 15px; }
 
 @-webkit-keyframes heartbeat {
   0% {
@@ -269,6 +277,9 @@ html, body {
       height: 54px;
       background-color: rgba(0, 0, 0, 0.3) !important; }
 
+.header-container {
+  min-height: 54px; }
+
 .header__bg {
   position: absolute;
   z-index: 0;
@@ -290,7 +301,7 @@ html, body {
   margin-top: 200px;
   position: relative;
   background-color: rgba(0, 0, 0, 0.3); }
-  .header__nav > div {
+  .header__nav > .container {
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -300,7 +311,7 @@ html, body {
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center; }
-    .header__nav > div > .div:not(.nav--left) {
+    .header__nav > .container > .div:not(.nav--left) {
       -webkit-box-flex: 1;
       -moz-box-flex: 1;
       -webkit-flex: 1;
@@ -406,10 +417,21 @@ html, body {
     transform: scaleY(1); }
 
 .header__search__result {
-  height: 300px;
   position: absolute;
-  top: 320px; }
+  top: calc(100% + 100px);
+  width: 100%;
+  left: 0;
+  display: none; }
+  .header__search__result .result-wrapper {
+    min-height: 300px;
+    max-width: 768px; }
 
+@media screen and (max-width: 769px) {
+  .nav--left {
+    padding-left: 1em; }
+
+  .nav--right {
+    display: none; } }
 .famous-quote {
   text-align: center;
   padding: 3em 0;
@@ -424,7 +446,8 @@ html, body {
     letter-spacing: -.025em;
     line-height: 1;
     margin-bottom: .5em;
-    font-size: 56px; }
+    font-size: 3em;
+    padding: .5em; }
     .famous-quote p:before {
       content: '“'; }
     .famous-quote p:after {
@@ -459,6 +482,9 @@ html, body {
   .footer-legal a {
     color: #aaa; }
 
+@media screen and (max-width: 769px) {
+  .famous-quote p {
+    font-size: 3em; } }
 .posts {
   max-width: 500px; }
 
@@ -573,6 +599,14 @@ html, body {
   .post__paging .pager li {
     display: inline-block; }
 
+@media screen and (max-width: 769px) {
+  .posts {
+    max-width: 100%;
+    margin-left: 15px;
+    margin-right: 15px; }
+
+  .post__paging {
+    text-align: center; } }
 .feature {
   max-width: 250px;
   margin-right: 0;
@@ -645,6 +679,11 @@ html, body {
     color: #fff;
     background-color: #f42; }
 
+@media screen and (max-width: 769px) {
+  .feature {
+    max-width: 100%;
+    margin-left: 15px;
+    margin-right: 15px; } }
 .page-wrapper {
   position: relative;
   z-index: 2000;
@@ -764,5 +803,79 @@ html, body {
 
 .br-theme-fontawesome-stars .br-widget a.br-selected:after {
   color: #f42 !important; }
+
+.page__share {
+  position: fixed;
+  bottom: 128px;
+  right: 32px; }
+
+.comment__note {
+  font-size: 1.2em;
+  color: #f42;
+  text-transform: uppercase; }
+
+.comment-wrapper {
+  position: relative;
+  margin-bottom: 6em; }
+  .comment-wrapper .btn-submit-comment {
+    position: absolute !important;
+    bottom: -18px;
+    right: 32px; }
+
+.posted__by {
+  font-size: .9em;
+  color: #aaa; }
+  .posted__by a {
+    color: #f42; }
+
+@media screen and (max-width: 769px) {
+  .page__tags {
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column; }
+
+  .page__feature {
+    max-width: 100%;
+    margin-left: 15px;
+    margin-right: 15px; } }
+.tag__statistic {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center; }
+  .tag__statistic .statistic {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1; }
+
+.post-by-tag {
+  margin-bottom: 16px;
+  border-bottom: 1px solid #ddd;
+  padding: 0 1.5em 10px; }
+  .post-by-tag:last-of-type {
+    border-bottom: none; }
+
+.tag__title {
+  display: block;
+  color: #212121;
+  /*&:hover {
+      color: $dark;
+  }*/ }
+
+.tag__filter {
+  padding: 1em 1.5em;
+  font-size: 1.2em;
+  text-align: left;
+  text-transform: uppercase;
+  color: #aaa; }
+  .tag__filter i {
+    color: #f42; }
 
 /*# sourceMappingURL=quang.css.map */

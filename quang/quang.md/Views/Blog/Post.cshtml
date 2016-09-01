@@ -5,6 +5,7 @@
 <div class="page-wrapper bgc-white z-depth5">
 
     <div class="page p+++ ">
+        <div class="posted__by">by <a href="#">tienquang</a> at @DateTime.Now.ToString("hh:mm tt MM/dd/yyyy")</div>
         <h1 class="page__title mb+++">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est</h1>
 
         <div class="page__content">
@@ -66,9 +67,9 @@
 
     <div class="ph+++ pv++ text-center2 page__tags clearfix">
         <ul class="tags list-unstyle list-inline float-left">
-            <li><a href="#">#lorem</a></li>
-            <li><a href="#">#ipsum</a></li>
-            <li><a href="#">#dolor sit</a></li>
+            <li><a href="@Url.Action("Tag","Blog")">#lorem</a></li>
+            <li><a href="@Url.Action("Tag","Blog")">#ipsum</a></li>
+            <li><a href="@Url.Action("Tag","Blog")">#dolor sit</a></li>
         </ul>
 
         <div class="statistic float-right">
@@ -144,7 +145,7 @@
                         <a href="#" class="author-avatar">
                             <img src="~/Content/images/post/user.png" />
                         </a>
-                        <div class="comment-by"><i>by</i> <a href="#">lorem ipsum</a> <i>on</i> 5:50 PM 08/31/2016</div>
+                        <div class="comment-by"><i>by</i> <a href="#">lorem ipsum</a> <i>at</i> 5:50 PM 08/31/2016</div>
                     </div>
                     <p class="comment__text z-depth22">
                         On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue
@@ -153,14 +154,55 @@
             </li>
         }
     </ul>
+
+    <div class="z-depth5 bgc-white p+++ comment-wrapper">
+
+        <h5 class="comment__note">what do you want to say?</h5>
+
+        <lx-text-field lx-label="Name">
+            <input type="text" ng-model="vm.textFields.floating.name">
+        </lx-text-field>
+
+        <lx-text-field lx-label="Comment">
+            <textarea ng-model="vm.textFields.textarea.comment"></textarea>
+        </lx-text-field>
+
+        <lx-button lx-type="fab" lx-size="l" class="btn-submit-comment bgc-main tc-white"><i class="mdi mdi-plus"></i></lx-button>
+    </div>
+
 </section>
+
+<div class="page__share">
+    <lx-fab lx-direction="up">
+        <lx-fab-trigger>
+            <lx-button lx-size="xl" lx-type="fab" lx-tooltip="share" class="bgc-main" lx-tooltip-position="left">
+                <i class="mdi mdi-share-variant"></i>
+                <i class="mdi mdi-shape-rectangle-plus"></i>
+            </lx-button>
+        </lx-fab-trigger>
+
+        <lx-fab-actions>
+            <lx-button lx-size="l" lx-color="black" lx-type="fab" lx-tooltip="facebook" lx-tooltip-position="left">
+                <i class="fa fa-facebook"></i>
+            </lx-button>
+
+            <lx-button lx-size="l" lx-color="black" lx-type="fab" lx-tooltip="twitter" lx-tooltip-position="left">
+                <i class="fa fa-twitter"></i>
+            </lx-button>
+
+            <lx-button lx-size="l" lx-color="black" lx-type="fab" lx-tooltip="google plus" lx-tooltip-position="left">
+                <i class="fa fa-google-plus"></i>
+            </lx-button>
+        </lx-fab-actions>
+    </lx-fab>
+</div>
 
 
 @section scripts {
     <script>
         $(document).ready(function () {
             // show quick nav
-            // $('.header__nav').addClass('header__nav--page');
+            $('.header__nav').addClass('header__nav--page');
 
             $('#ui-rating').barrating({
                 theme: 'fontawesome-stars'

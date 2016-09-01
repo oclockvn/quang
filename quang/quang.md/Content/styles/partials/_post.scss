@@ -129,3 +129,16 @@ $stt__interactive: 36px;
         }
     }
 }
+
+
+@media screen and (max-width: $mobile) {
+    .posts {
+        max-width: 100%;
+        margin-left: $mobile_gap;
+        margin-right: $mobile_gap;
+    }
+
+    .post__paging {
+        text-align: center;
+    }
+}

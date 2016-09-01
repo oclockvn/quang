@@ -1,0 +1,38 @@
+﻿.tag__statistic {
+    @include flexbox;
+    @include align(center);
+
+    .statistic {
+        @include flex(1);
+    }
+}
+
+.post-by-tag {
+    margin-bottom: 16px;
+    border-bottom: 1px solid #ddd;
+    padding: 0 1.5em 10px;
+
+    &:last-of-type {
+        border-bottom: none;
+    }
+}
+
+.tag__title {
+    display: block;
+    color: $dark;
+    /*&:hover {
+        color: $dark;
+    }*/
+}
+
+.tag__filter {
+    padding: 1em 1.5em;
+    font-size: 1.2em;
+    text-align: left;
+    text-transform: uppercase;
+    color: $light;
+
+    i {
+        color: $main;
+    }
+}

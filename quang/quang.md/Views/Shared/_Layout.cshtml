@@ -1,9 +1,14 @@
 ﻿<!DOCTYPE html>
+<!--
+    ▀ ▀ █ ▀ ▀ 　─ ▀ ─ 　█ ▀ ▀ 　█ ▀ ▀ ▄ 　　 　█ ▀ ▀ █ 　█ ─ ─ █ 　█ ▀ ▀ █ 　█ ▀ ▀ ▄ 　█ ▀ ▀ ▀ 　
+─ ─ █ ─ ─ 　▀ █ ▀ 　█ ▀ ▀ 　█ ─ ─ █ 　　 　█ ─ ─ █ 　█ ─ ─ █ 　█ ▄ ▄ █ 　█ ─ ─ █ 　█ ─ ▀ █ 　
+─ ─ ▀ ─ ─ 　▀ ▀ ▀ 　▀ ▀ ▀ 　▀ ─ ─ ▀ 　　 　▀ ▀ ▀ █ 　─ ▀ ▀ ▀ 　▀ ─ ─ ▀ 　▀ ─ ─ ▀ 　▀ ▀ ▀ ▀ 　
+-->
 <html ng-app="quang">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - TienQuang</title>
+    <title>@ViewBag.Title - Tien Quang</title>
 
     <link href="~/Content/lumx.css" rel="stylesheet" />
     <link href="~/Content/font-awesome.min.css" rel="stylesheet" />
@@ -20,7 +25,7 @@
     <header id="heaer" class="header z-depth2">
         <div class="header__bg"></div>
         <nav class="header__nav">
-            <div class="container">
+            <div class="container header-container">
                 <h2 class="nav--left">
                     <a href="@Url.Action("Index","Home")">tien quang</a>
                 </h2>
@@ -30,12 +35,17 @@
                         <li><a href="#">life</a></li>
                         <li><a href="#">portfolio</a></li>
                     </ul>
-                    <lx-button lx-type="fab" lx-size="xl" class="btn-toggle-search bgc-main tc-white">
+                    @*<lx-button lx-type="fab" lx-size="xl" class="btn-toggle-search bgc-main tc-white">
                         <i class="mdi mdi-magnify"></i>
                         <i class="mdi mdi-close"></i>
-                    </lx-button>
+                    </lx-button>*@
                 </div>
             </div>
+
+            <lx-button lx-type="fab" lx-size="xl" class="btn-toggle-search bgc-main tc-white">
+                <i class="mdi mdi-magnify"></i>
+                <i class="mdi mdi-close"></i>
+            </lx-button>
 
             <div class="header__search z-depth4">
                 <div class="search-wrapper container text-center pv+++">
@@ -43,6 +53,10 @@
                         <input type="text" ng-model="vm.textFields.fixed.emptyName">
                     </lx-text-field>
                 </div>
+            </div>
+
+            <div class="header__search__result mt++">
+                <div class="bgc-white result-wrapper container z-depth5"></div>
             </div>
         </nav>
 
@@ -54,7 +68,7 @@
             </div>
         </div>*@
 
-        @*<div class="header__search__result bgc-white z-depth4 mt++ container"></div>*@
+        @**@
     </header>
 
     <main class="main">
@@ -103,7 +117,8 @@
                 <a href="/">PTQ</a>
                 &copy; 2016 Phan Tien Quang
             </span>
-            <span>Made with <i class="ml- heartbeat"></i></span>
+            <span><i class="ml- heartbeat"></i>&nbsp;</span>
+            <span>Le Thi Thien Thao</span>
         </section>
     </footer>
 

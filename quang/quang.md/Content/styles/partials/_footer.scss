@@ -16,7 +16,9 @@
         letter-spacing: -.025em;
         line-height: 1;
         margin-bottom: .5em;
-        font-size: 56px;
+        //font-size: 56px;
+        font-size: 3em;
+        padding: .5em;
 
         &:before {
             content: '“';            
@@ -68,5 +70,13 @@
 
     a {
         color: #aaa;
+    }
+}
+
+@media screen and (max-width: $mobile) {
+    .famous-quote {
+        p {
+            font-size: 3em;
+        }
     }
 }

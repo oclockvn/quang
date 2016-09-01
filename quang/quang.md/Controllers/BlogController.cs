@@ -7,9 +7,13 @@ using System.Web.Mvc;
 namespace quang.md.Controllers
 {
     public class BlogController : Controller
-    {
-        // GET: Blog
+    {       
         public ActionResult Post()
+        {
+            return View();
+        }
+
+        public ActionResult Tag()
         {
             return View();
         }

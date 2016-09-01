@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewBag.Title = "Tag";
+}
+
+<div class="page-wrapper2 bgc-white card mb+++ z-depth5">
+    <h5 class="tag__filter">tag: <i>#lorem ipsum</i></h5>
+    @for (int i = 0; i < 10; i++)
+    {
+        <div class="post-by-tag">
+            <div class="posted__by">by <a href="#">tienquang</a> at @DateTime.Now.ToString("hh:mm tt MM/dd/yyyy")</div>
+            <h4>
+                <a href="@Url.Action("Post","Blog")" class="tag__title display-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</a>
+            </h4>
+            <div class="tag__statistic">
+                <ul class="tags list-inline list-unstyle m0">
+                    <li><a href="#">#lorem</a></li>
+                    <li><a href="#">#ipsum</a></li>
+                </ul>
+                <div class="statistic">
+                    <ul class="list-unstyle list-inline m0 text-right">
+                        <li>
+                            <span>20</span> <lx-icon lx-id="comment-text" lx-size="m" lx-color="blue" lx-type="flat"></lx-icon>
+                        </li>
+                        <li>
+                            <span>20</span> <lx-icon lx-id="account-circle" lx-size="m" lx-color="blue" lx-type="flat"></lx-icon>
+                        </li>
+                        <li>
+                            <span>9</span> <lx-icon lx-id="star" lx-size="m" lx-color="blue" lx-type="flat"></lx-icon>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    }
+</div>

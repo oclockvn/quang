@@ -148,3 +148,47 @@
 .br-theme-fontawesome-stars .br-widget a.br-selected:after {
     color: $main !important;
 }
+
+.page__share {
+    position: fixed;
+    bottom: 128px;
+    right: 32px;
+}
+
+.comment__note {
+    font-size: 1.2em;
+    color: $main;
+    text-transform: uppercase;
+}
+
+.comment-wrapper {
+    position: relative;
+    margin-bottom: 6em;
+
+    .btn-submit-comment {
+        position: absolute !important;
+        bottom: -18px;
+        right: 32px;
+    }
+}
+
+.posted__by {
+    font-size: .9em;
+    color: $light;
+
+    a {
+        color: $main;
+    }
+}
+
+@media screen and (max-width: $mobile) {
+    .page__tags {
+        @include flex-direction(column);
+    }
+
+    .page__feature {
+        max-width: 100%;
+        margin-left: $mobile_gap;
+        margin-right: $mobile_gap;
+    }
+}
