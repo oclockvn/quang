@@ -606,7 +606,10 @@ html, body {
     margin-right: 15px; }
 
   .post__paging {
-    text-align: center; } }
+    text-align: center; }
+
+  .timestamp {
+    display: none !important; } }
 .feature {
   max-width: 250px;
   margin-right: 0;
